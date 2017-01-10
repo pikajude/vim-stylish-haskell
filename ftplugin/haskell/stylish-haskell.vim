@@ -35,5 +35,5 @@ endfunction
 
 augroup stylish-haskell
   autocmd!
-  autocmd BufWritePost *.hs call s:StylishHaskell()
+  autocmd BufUnload *.hs call s:StylishHaskell()
 augroup END
